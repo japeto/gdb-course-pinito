@@ -1,0 +1,3 @@
+## Conexión de vPostgreSQL y RStudio usando Docker
+
+Guía paso a paso para crear un entorno de desarrollo que incluye dos componentes esenciales: un servidor de base de datos PostgreSQL y una plataforma de análisis y programación en R con RStudio Server. Este entorno se creará y gestionará utilizando Docker y Docker Compose, lo que garantizará una configuración rápida y aislada.
