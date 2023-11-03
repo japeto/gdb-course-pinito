@@ -1,0 +1,32 @@
+version: '3'
+services:
+  lab_postgres:
+    image: postgres:13
+    container_name: lab_db
+    environment:
+      - POSTGRES_USER=pinito3
+      - POSTGRES_PASSWORD=pinito3
+      - POSTGRES_DB=pinito3
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+      - ./data/database.sql:/docker-entrypoint-initdb.d/database.sql
+    networks:
+      - pinito-net
+
+  lab_rstudio:
+    image: rocker/rstudio:latest
+    container_name: lab_rstudio
+    environment:
+      - PASSWORD=pinito3
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./rsdata:/home/rstudio
+    networks:
+      - pinito-net
+    depends_on:
+      - lab_postgres
+
+networks:
+  pinito-net:
+    driver: bridge
