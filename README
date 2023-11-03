@@ -1,3 +1,13 @@
-## Conexión de vPostgreSQL y RStudio usando Docker
+# Conexión de PostgreSQL y RStudio usando Docker
 
-Guía paso a paso para crear un entorno de desarrollo que incluye dos componentes esenciales: un servidor de base de datos PostgreSQL y una plataforma de análisis y programación en R con RStudio Server. Este entorno se creará y gestionará utilizando Docker y Docker Compose, lo que garantizará una configuración rápida y aislada.
+Este es un tutorial paso a paso para configurar un entorno de Docker que te permitirá conectar PostgreSQL y RStudio para realizar análisis de datos.
+
+## Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalados los siguientes elementos:
+
+1. [Docker](https://www.docker.com/get-started) en tu sistema.
+
+## Pasos
+
+Sigue estos pasos para configurar la conexión entre PostgreSQL y RStudio
