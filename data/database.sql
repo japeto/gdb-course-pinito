@@ -115,4 +115,4 @@ VALUES (4, 'PS89-XX34-269','Marcela', 'Rodriguez Rodriguez', 'Problematica');
 INSERT INTO factura (fechaFactura, numCliente, idMesero, idMesa, idPlatillo, idBebida)
 VALUES
   ('2023-11-03', 1, 2, 3, 2, 3),
-  ('2023-11-04', 6, 3, 8, 2, 1);
+  ('2023-11-04', 1, 3, 8, 2, 1);
